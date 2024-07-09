@@ -1,6 +1,6 @@
 import pandas as pd
 
-def create_combined_csv(grand_id_list, original_file_path, extended_file_path, hydrolakes_file_path, output_file_path):
+def create_com_csv_hylakes(grand_id_list, original_file_path, extended_file_path, hydrolakes_file_path, output_file_path):
     # Read the original Excel file and the extended data
     original_data = pd.read_excel(original_file_path)
     extended_data = pd.read_excel(extended_file_path)
