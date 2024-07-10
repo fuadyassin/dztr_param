@@ -1,6 +1,6 @@
 import pandas as pd
 
-def create_com_csv(grand_id_list, original_file_path, extended_file_path, output_file_path):
+def create_com_csv(grand_id_list, original_file_path, extended_file_path, output_file_path, percentiles):
     # Read the original Excel file and the extended data
     original_data = pd.read_excel(original_file_path)
     extended_data = pd.read_excel(extended_file_path)
@@ -12,7 +12,6 @@ def create_com_csv(grand_id_list, original_file_path, extended_file_path, output
     ]
     
     # Percentile row names
-    percentiles = ['10', '45', '85']
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     metrics = ['Q', 'S']
     
