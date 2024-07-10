@@ -1,6 +1,6 @@
 import pandas as pd
 
-def create_com_csv_hylakes(grand_id_list, original_file_path, extended_file_path, hydrolakes_file_path, output_file_path):
+def create_com_csv_hylakes(grand_id_list, original_file_path, extended_file_path, hydrolakes_file_path, output_file_path, percentiles):
     # Read the original Excel file and the extended data
     original_data = pd.read_excel(original_file_path)
     extended_data = pd.read_excel(extended_file_path)
@@ -14,7 +14,7 @@ def create_com_csv_hylakes(grand_id_list, original_file_path, extended_file_path
     ]
     
     # Percentile row names
-    percentiles = ['10', '45', '85']
+    # percentiles = ['10', '45', '85']
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     metrics = ['Q', 'S']
     
@@ -73,4 +73,3 @@ def create_com_csv_hylakes(grand_id_list, original_file_path, extended_file_path
     # Save the DataFrame to a CSV file
     csv_df.to_csv(output_file_path, index=False)
     print(f"Combined CSV file created successfully at {output_file_path}")
-
