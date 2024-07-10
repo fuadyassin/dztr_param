@@ -1,6 +1,6 @@
 # DZTR Parameter Library
 
-The `dztr_param` library provides functionalities to process and analyze dam data, including percentile calculations and CSV creation. It is designed to streamline the handling of hydrological data and assist in generating necessary output files for further analysis.
+The `dztr_param` library provides functionalities to process and analyze reservoir storage, inflow, and release data, including percentile calculations and CSV creation. It is designed to have all parameterization needed for dztr model for GrandID dams as long as data avaialbe for it. And then generating necessary output files for further analysis in hydrological model run.
 
 ## Features
 
@@ -30,6 +30,15 @@ To upgrade the package to the latest version: `pip install --upgrade git+https:/
 import dztr_param
 print(dir(dztr_param))
 from dztr_param import create_extended_columns, check_and_read_files, calculate_percentiles, update_extended_data, create_combined_csv
+
+## Define file paths
+```python
+original_file_path = '/content/drive/MyDrive/DZTR/GRanD_Dams_v1_1_DZTR.xlsx'
+extended_file_path = '/content/drive/MyDrive/DZTR/Extended_GRanD_Dams_v1_1_DZTR.xlsx'
+output_csvfile_path = '/content/drive/MyDrive/DZTR/combined_output.csv'
+hydrolakes_file_path = '/content/drive/MyDrive/DZTR/Hydro_LakesTypes_2_3_DZTR.xlsx'
+output_txtfile_path = '/content/drive/MyDrive/DZTR/combined_output.txt'
+datafolder = '/content/drive/MyDrive/DZTR/ResDataInflowStorageRelease'
 
 
 
