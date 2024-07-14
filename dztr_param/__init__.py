@@ -5,3 +5,4 @@ from .data_updater import update_extended_data
 from .csv_creator import create_com_csv
 from .csv_creator_hylakes import create_com_csv_hylakes
 from .txt_creator_hylakes import create_com_txt_hylakes
+from .res_data_est_from_hydrometric import *
