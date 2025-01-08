@@ -1,9 +1,36 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
   <diagram name="Page-1" id="HlTxUO8CS0mWEI1xs9gT">
-    <mxGraphModel>
+    <mxGraphModel dx="2284" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-1" value="columns.py Generates column names for percentiles Inputs: None Outputs: Column names for percentiles" style="shape=rectangle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="230" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-2" value="data_updater.py &#xa;Updates extended dataset with new percentiles &#xa;&#xa;Inputs: &#xa;Reservoir data files, GRAND_IDs &#xa;&#xa;Outputs: &#xa;Updated extended dataset" style="shape=rectangle;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tAKfebpuGEtn2CMEdyHk-3" target="tAKfebpuGEtn2CMEdyHk-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-3" value="file_reader.py &#xa;Reads data files based on GRAND_ID&#xa; &#xa;Inputs: &#xa;Folder path, GRAND_ID &#xa;&#xa;Outputs: &#xa;DataFrame of reservoir data" style="shape=rectangle;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="10" y="390" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tAKfebpuGEtn2CMEdyHk-4" target="tAKfebpuGEtn2CMEdyHk-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-4" value="percentiles.py Calculates percentiles from reservoir data Inputs: Reservoir data Outputs: Percentile data" style="shape=rectangle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="590" y="430" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-5" value="csv_creator.py Combines original and extended Excel data into a CSV file Inputs: Original Excel file, Extended data Outputs: Combined CSV file" style="shape=rectangle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="600" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-6" value="csv_creator_hylakes.py Combines original, extended, and HydroLakes data into a CSV file Inputs: Original data, Extended data, HydroLakes data Outputs: Combined CSV file" style="shape=rectangle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="590" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tAKfebpuGEtn2CMEdyHk-7" value="txt_creator_hylakes.py Generates a TXT file from combined data Inputs: Original data, Extended data, HydroLakes data Outputs: Combined TXT file" style="shape=rectangle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="600" width="180" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
